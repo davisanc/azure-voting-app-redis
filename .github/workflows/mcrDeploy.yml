@@ -68,8 +68,8 @@ jobs:
     - name: Get K8s context
       uses: azure/aks-set-context@v2.0
       with:
-        resource-group: qpetraroia_RG
-        cluster-name: myAKSCluster
+        resource-group: k8s-goat-RG
+        cluster-name: k8sgoatacr
 
 
     # Deploys application based on given manifest file
