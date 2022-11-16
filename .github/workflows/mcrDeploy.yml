@@ -69,7 +69,7 @@ jobs:
       uses: azure/aks-set-context@v2.0
       with:
         resource-group: k8s-goat-RG
-        cluster-name: k8sgoatacr
+        cluster-name: k8s-goat
 
 
     # Deploys application based on given manifest file
