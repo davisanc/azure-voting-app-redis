@@ -33,10 +33,10 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_CONTAINER_REGISTRY: demoregistrybuild2022
+  AZURE_CONTAINER_REGISTRY: k8sgoatacr
   CONTAINER_NAME: hello-world
-  RESOURCE_GROUP: qpetraroia_RG
-  CLUSTER_NAME: myAKSCluster
+  RESOURCE_GROUP: k8s-goat-RG
+  CLUSTER_NAME: k8s-goat
   DEPLOYMENT_MANIFEST_PATH: nginx-mcr-manifest.yaml
   IMAGE_PULL_SECRET_NAME: "acrcredentials"
 
