@@ -33,10 +33,10 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_CONTAINER_REGISTRY: demoregistrybuild2022
+  AZURE_CONTAINER_REGISTRY: k8sgoatacr 
   CONTAINER_NAME: hello-world
-  RESOURCE_GROUP: qpetraroia_RG
-  CLUSTER_NAME: myAKSCluster
+  RESOURCE_GROUP: k8s-goat-RG
+  CLUSTER_NAME: k8s-goat
   DEPLOYMENT_MANIFEST_PATH: nginx-acr-manifest.yaml
   IMAGE_PULL_SECRET_NAME: "acrcredentials"
 
@@ -68,8 +68,8 @@ jobs:
     - name: Get K8s context
       uses: azure/aks-set-context@v2.0
       with:
-        resource-group: qpetraroia_RG
-        cluster-name: myAKSCluster
+        resource-group: k8s-goat-RG
+        cluster-name: k8s-goat
 
 
     # Deploys application based on given manifest file
