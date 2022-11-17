@@ -24,7 +24,7 @@
 # For more options with the actions used below please refer to https://github.com/Azure/login
 
 
-name: Build and deploy an app to AKS through MCR
+name: Build deploy an app to AKS with MCR
 
 on:
   push:
