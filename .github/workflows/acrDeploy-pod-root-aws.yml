@@ -24,7 +24,7 @@
 # For more options with the actions used below please refer to https://github.com/Azure/login
 
 #test
-name: Deploy nginx as root to AKS
+name: Deploy nginx as root to EKS
 
 on:
   push:
