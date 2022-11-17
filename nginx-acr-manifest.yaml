@@ -27,6 +27,8 @@ spec:
         ports:
         - containerPort: 80
           protocol: TCP
+      securityContext:  
+        runAsUser: 5554
       restartPolicy: Always
 ---
 apiVersion: v1
