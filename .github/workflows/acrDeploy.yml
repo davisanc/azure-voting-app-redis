@@ -24,7 +24,7 @@
 # For more options with the actions used below please refer to https://github.com/Azure/login
 
 #test
-name: Build and deploy an app to AKS
+name: Build and deploy an app to AKS through ACR
 
 on:
   push:
