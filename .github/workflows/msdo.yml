@@ -33,7 +33,7 @@ jobs:
         uses: microsoft/security-devops-action@preview
         id: msdo
         with:
-          tools: trivy, container-mapping
+          tools: trivy
         env:
           GDN_TRIVY_ACTION: image
           GDN_TRIVY_IMAGEPATH: nginx
